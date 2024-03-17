@@ -1,1 +1,19 @@
 @import './common';
+
+// utils styles
+@import './utils/vars';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
+// base styles
+@import './base/base';
+@import './base/reset';
+@import './base/container';
+
+// layout styles
+@import './layout/header';
+@import './layout/navigation';
+
+// components styles
+@import './components/logo';
+@import './components/btn';

@@ -1,0 +1,50 @@
+.about {
+  @include section(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include section;
+  }
+
+  background-color: var(--team-background-color);
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    text-align: center;
+    color: var(--main-text-colol);
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: calc(42 / 36);
+    }
+  }
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__img {
+    margin-right: 50px;
+  }
+
+  &__subtitle {
+    margin-bottom: 5px;
+  }
+
+  &__desc {
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    @include list;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}

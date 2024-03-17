@@ -1,0 +1,17 @@
+.footer {
+  background-color: #2d394b;
+
+  &__container {
+    text-align: center;
+  }
+}
+
+.footer-bootem {
+  &__copyright {
+    color: var(--nav-text-light-color);
+    transition: color var(--timing-function);
+    padding: 15px 0;
+    font-weight: 500;
+    line-height: 1.14286;
+  }
+}
